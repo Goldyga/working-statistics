@@ -23,9 +23,6 @@ export class Formulas {
   }
 
   static calculateMinimumSampleSize(confidenceInterval: number, varianceOfDistribution: number, maxError: number) {
-    console.log(confidenceInterval);
-    console.log(varianceOfDistribution);
-    console.log(maxError);
     return Math.pow((confidenceInterval * varianceOfDistribution / maxError), 2);
   }
 }
